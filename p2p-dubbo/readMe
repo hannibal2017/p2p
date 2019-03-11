@@ -1,0 +1,6 @@
+现在基于springboot+dubbo的环境已经搭建好。接下来是继续完善。
+完善步骤如下：
+1，web项目，有前后台，坐在子项目p2p-dubbo-consumer
+2，mybatis和事务管理
+3，Redis，消息队列
+4，自动部署

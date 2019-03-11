@@ -1,0 +1,6 @@
+1，页面用thymeleaf
+2,springboot + mybatis + alibaba druid + 事务
+3，加上Redis
+   参考：https://www.cnblogs.com/leeSmall/p/8728231.html
+   连接本地Redis，安装参考：https://blog.csdn.net/jason_m_ho/article/details/80007330
+   redis启动后，即可在测试类测试。
