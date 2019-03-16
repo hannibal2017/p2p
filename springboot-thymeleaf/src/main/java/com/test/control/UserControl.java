@@ -29,10 +29,10 @@ public class UserControl extends BaseController {
 	}
 
 	@RequestMapping("/getUserListToJsonString")
-	public String getUserListToJsonString() {
+	public String getUserListToJsonString() { 
 		return ResultUtil.getJsonString(userService.getUserList());
 	}
-    
+
 	/**
 	 * extends BaseController类，输出字符串
 	 */
