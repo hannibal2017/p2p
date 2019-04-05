@@ -8,3 +8,4 @@
 5，输出转成json字符串，方法在ResultUtil.getJsonString(),效果见：http://localhost:8084/getUserListToJsonString
    通过response来输出字符串，效果见：http://localhost:8084/getUserListToPrintJson
 6，页面用jQuery ajax来获取数据，http://127.0.0.1:8084/getUsersByAjax.jsp
+7, session,用户登录和退出。在com.test.control.HelloControl。

@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
 
 	public void insertUser(User user) {
 		userDao.insertUser(user);
-		int a = 1 / 0; //错误，用来测试事务
+//		int a = 1 / 0; //错误，用来测试事务
 	}
 
 }

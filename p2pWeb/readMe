@@ -1,0 +1,18 @@
+p2p网站，有前台和后台。
+愿景：后台权限管理，前台有界面。这就要涉及到前端方面的知识，以及前后台数据的交互。
+技术 后端：springboot dubbo maven
+    前端：待选
+步骤：
+1、先搭后台环境
+2、选前端技术
+3、后台权限
+
+实现：
+1、父项目p2pWeb,子项目API，前后台项目（springboot web，JSP页面），实现dubbo
+2，p2p-provider提供者，加入mybatis，前后台（消费者）来获取数据
+3，前端：首页布局，注册和登录，了解HTML、CSS、JavaScript
+
+问题记录：
+1、dubbo和事务注解同时使用，dubbo无法注入。参考：https://gitee.com/xbq168/spring-boot-dubbo/tree/master/dubbo-service/src/main/resources
+https://blog.csdn.net/linzhiqiang0316/article/details/81138589
+2,java exception

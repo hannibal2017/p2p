@@ -5,6 +5,16 @@ public class User {
 	private String phone;
 	private String password;
 
+	public User() {
+		super();
+	}
+
+	public User(String phone, String password) {
+		super();
+		this.phone = phone;
+		this.password = password;
+	}
+
 	public int getId() {
 		return id;
 	}

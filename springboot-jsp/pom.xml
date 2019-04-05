@@ -4,7 +4,6 @@
 	<groupId>com.luo</groupId>
 	<artifactId>springboot-jsp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<build />
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
@@ -15,10 +14,6 @@
 		<version>1.5.6.RELEASE</version>
 	</parent>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -84,5 +79,12 @@
 			<optional>true</optional>
 		</dependency>
 	</dependencies>
-
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>
