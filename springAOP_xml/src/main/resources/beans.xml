@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<!-- 注解注入 -->
+	<context:component-scan base-package="com.luo" />
+	<bean id="helloAop" class="com.luo.aop.HelloAop">
+	</bean>
+	<!--配置切入点 -->
+	<aop:config>
+		<aop:pointcut id="pointcut" expression="execution(* com.luo.dao.impl.*.*(..))" />
+		<!-- expression="execution(public * *..HelloDaoImpl.sayHello(..))" /> -->
+		<aop:aspect ref="helloAop">
+			<aop:before method="before" pointcut-ref="pointcut" />
+			<aop:after method="after" pointcut-ref="pointcut" />
+			<!-- <aop:around method="around" pointcut-ref="pointcut" /> -->
+		</aop:aspect>
+	</aop:config>
+</beans>

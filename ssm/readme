@@ -1,0 +1,11 @@
+ssm框架，先整合spring和mybatis,再整合springmvc，并加上事务。
+添加数据库：执行src下的文件user.sql
+1,myecplise:new -web project,勾选 add maven support
+2，pom.xml添加需要的Jar包
+3，添加需要的配置文件，在src目录下。
+4，添加实体类，接口及其实现，mybatis等类
+5，修改web项目需要运行的配置。
+6，添加tomcat服务器8.5。
+7，tomcat运行后，执行http://localhost:8080/ssm/getUsser
+
+参考：https://www.cnblogs.com/luoa/articles/9735874.html

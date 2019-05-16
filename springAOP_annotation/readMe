@@ -1,0 +1,8 @@
+spring aop 的实现之annotation方式
+1、在文件beans.xml加上语句：
+<!-- 使用AOP注解 -->
+	<aop:aspectj-autoproxy />
+2、在类HelloAop加上以下注解：
+@Aspect
+@Component  （加上这个注解，才能找得到该类）
+在对应的方法上加上advice，before,after等。

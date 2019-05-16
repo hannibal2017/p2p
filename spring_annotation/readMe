@@ -1,0 +1,9 @@
+spring ioc 的实现之annotation方式
+1,在beans.xml加上：
+<context:component-scan base-package="com.luo" />
+表示注解开始
+2，在对应的地方加上合理的注释。
+控制层：@Cotroller
+服务层：@Service
+数据层：@Repository
+和@component是一个意思，但是使用明确的注解，方便理解。
