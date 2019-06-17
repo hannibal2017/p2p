@@ -1,0 +1,21 @@
+1,新建父工程，其他的建立子工程。
+2，服务注册和发现
+3，服务集群配置。
+  修改hosts文件，修改application.yml文件的配置。
+4，ribbon负载均衡，是客户端的工具。
+  1)，提供三个provider，各自连三个数据库
+  2），consumer根据负载算法，访问provider。
+     默认轮询算法，还有随机等算法可以选择。还可以自定义。
+5,feign负载均衡
+  feign集成了ribbon，定义服务绑定接口且以声明式的方法。
+  在项目api增加接口，然后在消费端项目引用接口，即可实现。
+  com.fasterxml.jackson.databind.JsonMappingException: Can not construct instance
+  修改类Dept，增加默认构造方法，即可。
+ 6，hystrix 服务熔断和降级。出错时，及时提醒，防止雪崩。
+   熔断：出错的时候，比如方法查询有错是，及时提醒。
+   降级：provider不可用时，及时提醒。代码是结合了feign负载均衡的方式。ribbon方式的话，再另看。
+ 7,zuul网关
+ 
+ 8,sprindcloud config
+   配置文件放在GitHub上。
+   启动项目config-3344，config-provider-deptMy-8001,访问：http://localhost:8002/dept/get/9
